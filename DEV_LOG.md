@@ -5,3 +5,4 @@
 - [2026-01-20T16:45:00] Create User model and authentication schemas
 - [2026-01-25T09:20:00] Implement JWT authentication middleware
 - [2026-01-28T13:10:00] Build student model and profile logic
+- [2026-02-02T10:05:00] Create recruiter model and company profile
