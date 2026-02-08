@@ -7,3 +7,4 @@
 - [2026-01-28T13:10:00] Build student model and profile logic
 - [2026-02-02T10:05:00] Create recruiter model and company profile
 - [2026-02-05T15:50:00] Setup job posting controllers
+- [2026-02-08T11:40:00] Implement job listing and filtering
