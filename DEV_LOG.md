@@ -10,3 +10,4 @@
 - [2026-02-08T11:40:00] Implement job listing and filtering
 - [2026-02-12T14:25:00] Add application tracking logic
 - [2026-02-15T10:30:00] Setup Nodemailer for email verification
+- [2026-02-18T16:15:00] Init React frontend with Vite
