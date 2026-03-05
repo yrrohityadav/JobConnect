@@ -14,3 +14,4 @@
 - [2026-02-22T09:45:00] Build global design system and CSS vars
 - [2026-02-26T13:20:00] Create Navbar and Sidebar components
 - [2026-03-02T11:10:00] Implement AuthContext for frontend state
+- [2026-03-05T15:35:00] Build login and registration pages
