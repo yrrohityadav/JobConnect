@@ -16,3 +16,4 @@
 - [2026-03-02T11:10:00] Implement AuthContext for frontend state
 - [2026-03-05T15:35:00] Build login and registration pages
 - [2026-03-08T10:50:00] Design student dashboard layout
+- [2026-03-12T14:15:00] Create job discovery grid and filters
