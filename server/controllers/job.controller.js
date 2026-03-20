@@ -10,10 +10,6 @@ exports.createJob = async (req, res, next) => {
             return res.status(404).json({ success: false, message: 'Recruiter profile not found.' });
         }
 
-        if (!recruiter.isVerified) {
-            return res.status(403).json({ success: false, message: 'Your recruiter account must be verified to post jobs.' });
-        }
-
         const job = await Job.create({
             ...req.body,
             deadline: new Date(req.body.deadline),

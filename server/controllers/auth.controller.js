@@ -42,7 +42,7 @@ exports.register = async (req, res, next) => {
             email,
             password,
             role: role || 'student',
-            isApproved: role === 'recruiter' ? false : true,
+            isApproved: true, // Always true to bypass admin approval
             verificationToken,
         });
 
@@ -63,9 +63,7 @@ exports.register = async (req, res, next) => {
 
         res.status(201).json({
             success: true,
-            message: role === 'recruiter'
-                ? 'Registration successful. Please verify your email. Your account will be reviewed by an admin.'
-                : 'Registration successful. Please verify your email.',
+            message: 'Registration successful. Please verify your email.',
         });
     } catch (error) {
         next(error);
@@ -91,13 +89,6 @@ exports.login = async (req, res, next) => {
             return res.status(401).json({
                 success: false,
                 message: 'Invalid email or password.',
-            });
-        }
-
-        if (!user.isApproved) {
-            return res.status(403).json({
-                success: false,
-                message: 'Your account is pending admin approval.',
             });
         }
 
